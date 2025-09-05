@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    background-color: rgba(56, 182, 255, 1);
+    height: 100vh;
+}
+
+.login-section {
+    background-color: white;
+    width: 30vw;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.form-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.form-control-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    padding: 0.8rem;
+    border: 0.1em solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+
+.login-form>.form-group:last-child {
+    flex-direction: row;
+}
+
+@media (max-width:480px) {
+    .login-form>.form-group:last-child {
+        flex-direction: column;
+    }
+}
+
+.login-form>.form-group>button {
+    border: none;
+    border-radius: 0.2rem;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: rgba(56, 182, 255, 1);
+    color: white;
+}
+
+.login-form>.form-group>button:first-child {
+    margin-right: 1em;
+    color: black;
+    background-color: white;
+}
+
+.login-section>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section>div>a {
+    text-decoration: none;
+}
