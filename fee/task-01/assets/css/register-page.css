@@ -1,20 +1,23 @@
-/*Common*/
-
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
     font-size: 16px;
+    margin: 0;
 }
 
 .flex {
     display: flex;
 }
 
-.flex-column {
+.flex-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+.flex-row > .form-group{
+    flex: 1;
 }
 
 main {
@@ -24,17 +27,17 @@ main {
     background-color: rgba(56, 182, 255, 1);
 }
 
-.section-login {
-    width: 30vw;
-    padding: 2rem;
+.section-register {
+    width: 40vw;
     background-color: white;
-    border-radius: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
-.section-login > h1 {
+.section-register > h1 {
     text-align: center;
     font-size: 2em;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -43,31 +46,46 @@ main {
 }
 
 .form-group > input {
+    width: 100%;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: 0.2px solid rgba(222, 226, 230, 1);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .form-group > button {
-    background-color: rgba(56, 182, 255, 1);
-    color: white;
     font-size: 1.25rem;
-    border: none;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 0.5rem;
-    width: 49%;
+    background-color: rgba(56, 182, 255, 1);
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    flex: 1;
 }
 
 .form-group > button:first-child {
-    background-color: white;
     color: black;
+    background-color: white;
 }
 
-a {
+.section-register > a {
     display: block;
     text-align: center;
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 800px) {
+    .flex-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .section-register {
+        width: 100vw;
+    }
+}
+
+
+
+
 
 
