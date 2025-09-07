@@ -4,6 +4,7 @@ footer {
     padding: 1rem;
     gap: 4rem;
     align-items: flex-start;
+    display: block;
 }
 
 footer > div.brand-info {
