@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    margin-top: var(--header-height, 7vh);
+}
+
+main > h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+section.section-contact {
+    align-items: baseline;
+    gap: 3rem;
+}
+
+div.div-contact {
+    flex: 1;
+}
+
+div.div-contact > h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+div.div-contact > p {
+    margin-bottom: 1rem;
+}
+
+div.div-contact > .form-contact > .form-group {
+    margin-bottom: 1rem;
+}
+
+div.div-contact > .form-contact > .form-group > .form-control-label {
+    display: block;
+}
+
+div.div-contact > .form-contact > .form-group > .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.3px solid rgba(222, 226, 230, 1);
+    border-radius: 0.3rem;
+}
+
+div.div-contact > .form-contact > button {
+    padding: 0.8rem;
+    font-size: 1.25rem;
+    background-color: rgba(56, 182, 255, 1);
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+div.contact-info {
+    flex: 1;
+}
+
+div.contact-info > h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+div.contact-info > p {
+    margin-bottom: 1rem;
+}
+
+div.contact-info > ul {
+    list-style: none;
+}
