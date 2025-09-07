@@ -1,0 +1,39 @@
+footer {
+    height: fit-content;
+    border-top: 0.3px dashed rgba(222, 226, 230, 1);
+    padding: 1rem;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+footer > div.brand-info {
+    flex: 5;
+}
+
+footer > div.footer-menu {
+    flex: 1;
+}
+
+footer > div.footer-menu > h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+footer > div.footer-menu > ul {
+    list-style: none;
+}
+
+footer > div.footer-contact {
+    flex: 2;
+}
+
+footer > div.footer-contact > h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+footer > div.footer-contact > ul {
+    list-style: none;
+}
